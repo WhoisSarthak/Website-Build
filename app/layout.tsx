@@ -10,9 +10,16 @@ const geistMono = Geist_Mono({
 })
 
 export const metadata: Metadata = {
-  title: 'v0 App',
-  description: 'Created with v0',
+  title: 'Sarthak | Software Engineer & System Designer',
+  description: 'Full-stack software engineer with 6+ years of experience building scalable systems. Expertise in system design, cloud infrastructure, and leading high-performing teams.',
   generator: 'v0.app',
+  keywords: ['software engineer', 'system design', 'full-stack', 'backend', 'architecture'],
+  authors: [{ name: 'Sarthak' }],
+  openGraph: {
+    title: 'Sarthak | Software Engineer & System Designer',
+    description: 'Full-stack software engineer with expertise in system design and scalable systems.',
+    type: 'website',
+  },
   icons: {
     icon: [
       {
@@ -33,10 +40,9 @@ export const metadata: Metadata = {
 }
 
 export const viewport: Viewport = {
-  colorScheme: 'light dark',
+  colorScheme: 'dark',
   themeColor: [
-    { media: '(prefers-color-scheme: light)', color: 'white' },
-    { media: '(prefers-color-scheme: dark)', color: 'black' },
+    { media: '(prefers-color-scheme: dark)', color: '#000000' },
   ],
 }
 
