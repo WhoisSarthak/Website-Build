@@ -49,8 +49,13 @@ export function Projects() {
             <motion.div
               key={project.id}
               variants={itemVariants}
-              className="group border border-border rounded-lg p-6 hover:bg-foreground/5 transition-colors"
+              className="group border border-border rounded-lg p-6 hover:bg-foreground/5 transition-colors relative"
             >
+              {project.status === 'coming-soon' && (
+                <div className="absolute top-4 right-4 px-3 py-1 text-xs font-medium bg-foreground/10 border border-border rounded-md">
+                  Coming Soon
+                </div>
+              )}
               <h3 className="text-xl font-semibold mb-2 group-hover:text-foreground transition-colors">
                 {project.title}
               </h3>
@@ -67,24 +72,26 @@ export function Projects() {
                   </span>
                 ))}
               </div>
-              <div className="flex gap-4 text-sm">
-                {project.link && (
-                  <Link
-                    href={project.link}
-                    className="text-foreground hover:text-muted-foreground transition-colors"
-                  >
-                    Live →
-                  </Link>
-                )}
-                {project.github && (
-                  <Link
-                    href={project.github}
-                    className="text-foreground hover:text-muted-foreground transition-colors"
-                  >
-                    GitHub →
-                  </Link>
-                )}
-              </div>
+              {project.status === 'completed' && (
+                <div className="flex gap-4 text-sm">
+                  {project.link && (
+                    <Link
+                      href={project.link}
+                      className="text-foreground hover:text-muted-foreground transition-colors"
+                    >
+                      Live →
+                    </Link>
+                  )}
+                  {project.github && (
+                    <Link
+                      href={project.github}
+                      className="text-foreground hover:text-muted-foreground transition-colors"
+                    >
+                      GitHub →
+                    </Link>
+                  )}
+                </div>
+              )}
             </motion.div>
           ))}
         </motion.div>

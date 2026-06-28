@@ -1,10 +1,9 @@
 'use client';
 
 import { motion } from 'framer-motion';
+import Link from 'next/link';
 
 export function Hero() {
-  const words = ['Software Engineer', 'System Designer', 'Builder'];
-  
   const containerVariants = {
     hidden: { opacity: 0 },
     visible: {
@@ -35,44 +34,34 @@ export function Hero() {
       >
         <motion.div variants={itemVariants} className="mb-6">
           <h1 className="text-6xl md:text-7xl font-bold mb-4 text-balance">
-            Hi, I&apos;m Sarthak
+            Sarthak Bhattarai
           </h1>
         </motion.div>
 
         <motion.div variants={itemVariants} className="mb-6">
-          <p className="text-xl md:text-2xl text-muted-foreground mb-3">
-            I build
+          <p className="text-2xl md:text-3xl font-semibold text-foreground/80 mb-6">
+            Electronics Engineering Student
           </p>
-          <div className="flex justify-center gap-3 flex-wrap">
-            {words.map((word, index) => (
-              <motion.span
-                key={word}
-                className="text-xl md:text-2xl px-3 py-1 rounded-lg bg-foreground/5 border border-border"
-                initial={{ opacity: 0, y: 10 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ delay: 0.3 + index * 0.15 }}
-              >
-                {word}
-              </motion.span>
-            ))}
-          </div>
         </motion.div>
 
         <motion.p
           variants={itemVariants}
           className="text-muted-foreground text-lg leading-relaxed mb-8 text-balance"
         >
-          Passionate about creating elegant solutions to complex problems. With expertise in full-stack development,
-          system design, and cloud infrastructure, I&apos;ve helped teams scale from 0 to millions of users.
+          I enjoy building practical projects while learning electronics, embedded systems, programming, and modern web technologies. I&apos;m constantly improving my skills through coursework, personal projects, and hands-on experimentation.
         </motion.p>
 
-        <motion.div variants={itemVariants} className="flex gap-4 justify-center">
-          <button className="px-8 py-3 rounded-lg bg-foreground text-background hover:opacity-80 transition-opacity font-medium">
-            View My Work
-          </button>
-          <button className="px-8 py-3 rounded-lg border border-border hover:bg-foreground/5 transition-colors font-medium">
-            Download Resume
-          </button>
+        <motion.div variants={itemVariants} className="flex gap-4 justify-center flex-wrap">
+          <Link href="#projects">
+            <button className="px-8 py-3 rounded-lg bg-foreground text-background hover:opacity-80 transition-opacity font-medium">
+              View Projects
+            </button>
+          </Link>
+          <Link href="#contact">
+            <button className="px-8 py-3 rounded-lg border border-border hover:bg-foreground/5 transition-colors font-medium">
+              Contact Me
+            </button>
+          </Link>
         </motion.div>
       </motion.div>
     </section>

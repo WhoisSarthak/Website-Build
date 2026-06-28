@@ -5,27 +5,19 @@ export interface Skill {
 
 export const skills: Skill[] = [
   {
-    category: 'Languages',
-    items: ['TypeScript', 'Python', 'Go', 'Rust', 'JavaScript', 'SQL'],
+    category: 'Programming',
+    items: ['C', 'C++', 'JavaScript', 'MATLAB'],
   },
   {
-    category: 'Backend',
-    items: ['Node.js', 'Express', 'FastAPI', 'PostgreSQL', 'MongoDB', 'Redis'],
+    category: 'Web',
+    items: ['HTML', 'CSS', 'React (Learning)', 'Next.js (Learning)'],
   },
   {
-    category: 'Frontend',
-    items: ['React', 'Next.js', 'Tailwind CSS', 'D3.js', 'Vue.js'],
+    category: 'Engineering',
+    items: ['Digital Electronics', 'Circuit Analysis', 'Signals & Systems'],
   },
   {
-    category: 'DevOps & Infrastructure',
-    items: ['Kubernetes', 'Docker', 'AWS', 'CI/CD', 'Terraform', 'Nginx'],
-  },
-  {
-    category: 'Databases',
-    items: ['PostgreSQL', 'MongoDB', 'Redis', 'Elasticsearch', 'TimescaleDB'],
-  },
-  {
-    category: 'Tools & Platforms',
-    items: ['Git', 'GitHub', 'Linux', 'Vercel', 'Datadog', 'Sentry'],
+    category: 'Tools',
+    items: ['Git', 'GitHub', 'VS Code'],
   },
 ];

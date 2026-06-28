@@ -25,7 +25,7 @@ export function Skills() {
   };
 
   return (
-    <section className="py-20 px-6 bg-foreground/2">
+    <section id="skills" className="py-20 px-6">
       <div className="max-w-4xl mx-auto">
         <motion.h2
           initial={{ opacity: 0, y: 20 }}
@@ -34,7 +34,7 @@ export function Skills() {
           viewport={{ once: true }}
           className="text-4xl font-bold mb-12"
         >
-          Skills & Expertise
+          Skills
         </motion.h2>
 
         <motion.div

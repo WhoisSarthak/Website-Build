@@ -37,51 +37,67 @@ export function Contact() {
             variants={itemVariants}
             className="text-4xl font-bold mb-6"
           >
-            Let&apos;s Work Together
+            Get In Touch
           </motion.h2>
 
           <motion.p
             variants={itemVariants}
             className="text-muted-foreground text-lg mb-8 leading-relaxed"
           >
-            I&apos;m always interested in hearing about new projects and opportunities. Whether you want to collaborate,
-            discuss ideas, or just say hello, feel free to reach out.
+            I&apos;d love to hear from you! Feel free to reach out if you want to chat about projects, opportunities, or anything else.
           </motion.p>
 
           <motion.div
             variants={itemVariants}
-            className="flex flex-col sm:flex-row gap-4 justify-center mb-8"
+            className="space-y-6 mb-8"
           >
-            <a
-              href="mailto:sarthak@example.com"
-              className="px-8 py-3 rounded-lg bg-foreground text-background hover:opacity-80 transition-opacity font-medium"
-            >
-              Send me an email
-            </a>
-            <Link
-              href="#"
-              className="px-8 py-3 rounded-lg border border-border hover:bg-foreground/5 transition-colors font-medium"
-            >
-              Schedule a call
-            </Link>
+            <div>
+              <h3 className="font-semibold text-foreground mb-2">Email</h3>
+              <a
+                href="mailto:sarthakbhattarai420@gmail.com"
+                className="text-muted-foreground hover:text-foreground transition-colors"
+              >
+                sarthakbhattarai420@gmail.com
+              </a>
+            </div>
+
+            <div>
+              <h3 className="font-semibold text-foreground mb-2">Phone</h3>
+              <a
+                href="tel:+977-9762691916"
+                className="text-muted-foreground hover:text-foreground transition-colors"
+              >
+                +977 9762691916
+              </a>
+            </div>
           </motion.div>
 
           <motion.div
             variants={itemVariants}
-            className="flex gap-6 justify-center text-sm"
+            className="flex gap-6 justify-center flex-wrap"
           >
-            <Link href="#" className="text-muted-foreground hover:text-foreground transition-colors">
-              Twitter
-            </Link>
-            <Link href="#" className="text-muted-foreground hover:text-foreground transition-colors">
+            <Link 
+              href="https://github.com/WhoisSarthak"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-muted-foreground hover:text-foreground transition-colors"
+            >
               GitHub
             </Link>
-            <Link href="#" className="text-muted-foreground hover:text-foreground transition-colors">
+            <Link 
+              href="https://www.linkedin.com/in/sarthak-bhattarai-0008a7379/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-muted-foreground hover:text-foreground transition-colors"
+            >
               LinkedIn
             </Link>
-            <Link href="#" className="text-muted-foreground hover:text-foreground transition-colors">
+            <a 
+              href="mailto:sarthakbhattarai420@gmail.com"
+              className="text-muted-foreground hover:text-foreground transition-colors"
+            >
               Email
-            </Link>
+            </a>
           </motion.div>
         </motion.div>
       </div>
