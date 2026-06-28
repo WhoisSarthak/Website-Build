@@ -10,14 +10,14 @@ const geistMono = Geist_Mono({
 })
 
 export const metadata: Metadata = {
-  title: 'Sarthak | Software Engineer & System Designer',
-  description: 'Full-stack software engineer with 6+ years of experience building scalable systems. Expertise in system design, cloud infrastructure, and leading high-performing teams.',
+  title: 'Sarthak Bhattarai | Electronics Engineering Student',
+  description: 'Personal portfolio of Sarthak Bhattarai, an Electronics Engineering student interested in embedded systems, programming, PCB design, and practical engineering projects.',
   generator: 'v0.app',
-  keywords: ['software engineer', 'system design', 'full-stack', 'backend', 'architecture'],
-  authors: [{ name: 'Sarthak' }],
+  keywords: ['electronics', 'engineering', 'embedded systems', 'programming', 'PCB design', 'portfolio'],
+  authors: [{ name: 'Sarthak Bhattarai' }],
   openGraph: {
-    title: 'Sarthak | Software Engineer & System Designer',
-    description: 'Full-stack software engineer with expertise in system design and scalable systems.',
+    title: 'Sarthak Bhattarai | Electronics Engineering Student',
+    description: 'Personal portfolio of Sarthak Bhattarai, an Electronics Engineering student interested in embedded systems, programming, PCB design, and practical engineering projects.',
     type: 'website',
   },
   icons: {
