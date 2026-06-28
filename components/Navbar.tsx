@@ -35,34 +35,28 @@ export function Navbar() {
           Sarthak
         </Link>
 
-        <div className="flex gap-8 items-center">
+        <div className="flex gap-8 items-center text-sm">
           <button
             onClick={() => scrollToSection('about')}
-            className="text-sm hover:text-muted-foreground transition-colors"
+            className="hover:text-muted-foreground transition-colors"
           >
             About
           </button>
           <button
             onClick={() => scrollToSection('projects')}
-            className="text-sm hover:text-muted-foreground transition-colors"
+            className="hover:text-muted-foreground transition-colors"
           >
             Projects
           </button>
           <button
-            onClick={() => scrollToSection('experience')}
-            className="text-sm hover:text-muted-foreground transition-colors"
+            onClick={() => scrollToSection('skills')}
+            className="hover:text-muted-foreground transition-colors"
           >
-            Experience
-          </button>
-          <button
-            onClick={() => scrollToSection('writing')}
-            className="text-sm hover:text-muted-foreground transition-colors"
-          >
-            Writing
+            Skills
           </button>
           <Link
             href="#contact"
-            className="text-sm px-4 py-2 rounded-lg bg-foreground text-background hover:opacity-80 transition-opacity"
+            className="px-4 py-2 rounded-lg bg-foreground text-background hover:opacity-80 transition-opacity"
           >
             Contact
           </Link>
